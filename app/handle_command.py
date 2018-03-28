@@ -1,14 +1,16 @@
 import os
 import re
 
-import credentials as creds
 import questions as ques
 import converse as convo
 
 from slackclient import SlackClient
 
+# env vars
+SLACK_BOT_TOKEN = os.environ["SLACK_BOT_TOKEN"]
+
 # instantiate Slack client
-slack_client = SlackClient(creds.SLACK_BOT_TOKEN)
+slack_client = SlackClient(SLACK_BOT_TOKEN)
 
 # constants
 GREETING = "hello"
