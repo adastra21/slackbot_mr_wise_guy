@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+"psycopg2-binary" = "*"
+"httplib2" = "*"
+"oauth2client" = "*"
+"oauth2client.service_account" = "*"
+"pandas" = "*"
+"gspread" = "*"
+"slackclient" = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "2.7"
