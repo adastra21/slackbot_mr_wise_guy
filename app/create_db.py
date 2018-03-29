@@ -1,6 +1,7 @@
 from __future__ import print_function
 import httplib2
 import os
+import json
 
 from oauth2client.service_account import ServiceAccountCredentials
 
@@ -22,7 +23,7 @@ def get_connected_to_api():
     Use service account for authenticating and authorizing access
     to Google Sheets API
     """
-    credentials = ServiceAccountCredentials.from_json_keyfile_dict(FILENAME, SCOPE)
+    credentials = ServiceAccountCredentials.from_json_keyfile_dict(json.loads(FILENAME), SCOPE)
     gc = gspread.authorize(credentials)
     return gc
 
