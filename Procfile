@@ -1,1 +1,1 @@
-web: python app/send_receive.py
+worker: python app/send_receive.py
