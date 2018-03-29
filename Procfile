@@ -1,1 +1,1 @@
-web: python send_receive.py
+web: python app/send_receive.py
