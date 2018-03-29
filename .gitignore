@@ -45,3 +45,5 @@ Thumbs.db
 # System specific files #
 #########################
 credentials.py
+Pipfile
+Pipfile.lock
