@@ -22,7 +22,7 @@ def get_connected_to_api():
     Use service account for authenticating and authorizing access
     to Google Sheets API
     """
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(FILENAME, SCOPE)
+    credentials = ServiceAccountCredentials.from_json_keyfile_dict(FILENAME, SCOPE)
     gc = gspread.authorize(credentials)
     return gc
 
